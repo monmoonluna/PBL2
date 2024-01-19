@@ -1,0 +1,169 @@
+12
+6
+Dương Quang Minh Hoàng
+Đà Nẵng
+Nam
+2004
+CNTT
+ĐẠI HỌC
+2.3
+200
+200
+301427200
+2021
+2025
+GIỎI
+7
+Huỳnh Thúy Minh Nguyệt
+Đà Nẵng
+Nữ
+2004
+CNTT
+ĐẠI HỌC
+2
+200
+200
+300980192
+2021
+2025
+GIỎI
+11
+Dương Quang Minh Hoàng
+Đà Nẵng
+Nam
+2004
+CNTT
+ĐẠI HỌC
+2.3
+200
+200
+301427200
+2021
+2025
+GIỎI
+12
+Huỳnh Thúy Minh Nguyệt
+Đà Nẵng
+Nữ
+2004
+CNTT
+ĐẠI HỌC
+2
+200
+200
+300980192
+2021
+2025
+GIỎI
+13
+Huỳnh Thúy Minh Nguyệt
+Đà Nẵng
+Nữ
+2004
+CNTT
+ĐẠI HỌC
+2
+200
+200
+300980192
+2021
+2025
+GIỎI
+15
+Dương Quang Minh Hoàng
+Đà Nẵng
+Nam
+2004
+CNTT
+ĐẠI HỌC
+2.3
+200
+200
+301427200
+2021
+2025
+GIỎI
+18
+Dương Quang Minh Hoàng
+Đà Nẵng
+Nam
+2004
+NGÔN NGỮ
+ĐẠI HỌC
+2.3
+200
+200
+301427200
+2021
+2025
+GIỎI
+19
+Huỳnh Thúy Minh Nguyệt
+Đà Nẵng
+Nữ
+2004
+NGÔN NGỮ
+ĐẠI HỌC
+2
+200
+200
+300980192
+2021
+2025
+GIỎI
+23
+Dương Quang Minh Hoàng
+Đà Nẵng
+Nam
+2004
+NGÔN NGỮ
+ĐẠI HỌC
+2.3
+200
+200
+301427200
+2021
+2025
+GIỎI
+24
+Huỳnh Thúy Minh Nguyệt
+Đà Nẵng
+Nữ
+2004
+NGÔN NGỮ
+ĐẠI HỌC
+2
+200
+200
+300980192
+2021
+2025
+GIỎI
+30
+Huỳnh Thúy Minh Nguyệt
+Đà Nẵng
+Nữ
+2004
+NGOẠI NGỮ
+TIẾN SĨ
+2.3
+20
+20
+33227018
+2020
+2024
+GIỎI
+4
+Đào Lê Hạnh Nguyên
+Huế
+Nữ
+2004
+NGOẠI NGỮ
+TIẾN SĨ
+2.3
+200
+200
+301427200
+2020
+2024
+KHÁ
