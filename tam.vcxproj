@@ -36,6 +36,7 @@
     <ProjectGuid>{4035a834-8ae0-4548-9ab3-052965c0e2da}</ProjectGuid>
     <RootNamespace>tam</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>CanBo</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

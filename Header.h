@@ -10,11 +10,11 @@
 
 using namespace std;
 
+// Nối 2 chuỗi
 inline wstring conCat(wstring s1, wstring s2)
 {
 	return s1 + L'_' + s2 + L".txt";
 }
-// Nối 2 chuỗi
 
 //Làm ẩn con trỏ chuột
 inline void ShowCur(bool CursorVisibility)
@@ -22,14 +22,6 @@ inline void ShowCur(bool CursorVisibility)
 	HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
 	CONSOLE_CURSOR_INFO cursor = { 1, CursorVisibility };
 	SetConsoleCursorInfo(handle, &cursor);
-}
-
-//Chỉnh màu sắc chữ
-inline void textcolor(int x)
-{
-	HANDLE color;
-	color = GetStdHandle(STD_OUTPUT_HANDLE);
-	SetConsoleTextAttribute(color, x);
 }
 
 //Ghi lỗi và thoát ra ( dùng trong bắt sự kiện chuột)
@@ -363,7 +355,7 @@ inline void menu() {
 	writeString(x, 32, L"13. Hiển thị cán bộ theo mã cán bộ");
 	writeString(x, 34, L"14. Hiển thị cán bộ theo tuổi");
 	writeString(x, 36, L"15. Hiển thị cán bộ theo số năm công tác");
-	writeString(x, 38, L"16. Đăng xuất");
+	writeString(x, 38, L"16. THOÁT");
 }
 
 //bảng chỉnh sửa
@@ -383,61 +375,61 @@ inline void fixTable() {
 	SetConsoleTextAttribute(consoleHandle, 0x71);
 	int x = 57;
 	writeString(x, 8, L"1. MÃ");
-	writeString(x, 10, L"2. HỌ VÀ TÊN"); 
-	writeString(x, 12, L"3. QUÊ QUÁN"); 
-	writeString(x, 14, L"4. GIỚI TÍNH"); 
+	writeString(x, 10, L"2. HỌ VÀ TÊN");
+	writeString(x, 12, L"3. QUÊ QUÁN");
+	writeString(x, 14, L"4. GIỚI TÍNH");
 	writeString(x, 16, L"5. NĂM SINH");
-	writeString(x, 18, L"6. CHUYÊN MÔN"); 
+	writeString(x, 18, L"6. CHUYÊN MÔN");
 	writeString(x, 20, L"7. TRÌNH ĐỘ");
 	writeString(x, 22, L"8. HỆ SỐ LƯƠNG");
-	writeString(x, 24, L"9. PHỤ CẤP"); 
-	writeString(x, 26, L"10. ĂN TRƯA"); 
-	writeString(x, 28, L"11. THỰC LĨNH"); 
-	writeString(x, 30, L"12. NĂM VÀO NGHỀ"); 
-	writeString(x, 32, L"13. NĂM TĂNG LƯƠNG"); 
-	writeString(x, 34, L"14. XẾP LOẠI"); 
+	writeString(x, 24, L"9. PHỤ CẤP");
+	writeString(x, 26, L"10. ĂN TRƯA");
+	writeString(x, 28, L"11. THỰC LĨNH");
+	writeString(x, 30, L"12. NĂM VÀO NGHỀ");
+	writeString(x, 32, L"13. NĂM TĂNG LƯƠNG");
+	writeString(x, 34, L"14. XẾP LOẠI");
 }
 
 inline void display1() {
-		// Lấy handle của cửa sổ console
-		HANDLE consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
+	// Lấy handle của cửa sổ console
+	HANDLE consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
 
-		// Thiết lập màu văn bản và nền
-		SetConsoleTextAttribute(consoleHandle, 0x74);
-		menuBar(56, 3, 57, 4);
-		SetConsoleTextAttribute(consoleHandle, 0x71);
-		writeString(57, 5, L"     CHÀO MỪNG BẠN ĐẾN VỚI ỨNG DỤNG QUẢN LÝ CÁN BỘ      ");
+	// Thiết lập màu văn bản và nền
+	SetConsoleTextAttribute(consoleHandle, 0x74);
+	menuBar(56, 3, 57, 4);
+	SetConsoleTextAttribute(consoleHandle, 0x71);
+	writeString(57, 5, L"     CHÀO MỪNG BẠN ĐẾN VỚI ỨNG DỤNG QUẢN LÝ CÁN BỘ      ");
 
-		gotoxy(57, 4);
-		fillColorConsole(57, 4, 112, 4);
-		gotoxy(57, 6);
-		fillColorConsole(57, 6, 112, 6);
-		gotoxy(0, 3);
-		fillColorConsole(0, 4, 55, 8);
+	gotoxy(57, 4);
+	fillColorConsole(57, 4, 112, 4);
+	gotoxy(57, 6);
+	fillColorConsole(57, 6, 112, 6);
+	gotoxy(0, 3);
+	fillColorConsole(0, 4, 55, 8);
 
-		SetConsoleTextAttribute(consoleHandle, 0x70);
-		//khung tên đăng nhập
-		menuBar(68, 10, 32, 2);
-		gotoxy(0, 11);
-		fillColorConsole(80, 11, 99, 12);
+	SetConsoleTextAttribute(consoleHandle, 0x70);
+	//khung tên đăng nhập
+	menuBar(68, 10, 32, 2);
+	gotoxy(0, 11);
+	fillColorConsole(80, 11, 99, 12);
 
-		//khung mật khẩu
-		menuBar(68, 13, 32, 2);
-		gotoxy(0, 14);
-		fillColorConsole(75, 14, 99, 15);
+	//khung mật khẩu
+	menuBar(68, 13, 32, 2);
+	gotoxy(0, 14);
+	fillColorConsole(75, 14, 99, 15);
 
-		//viết chữ
-		SetConsoleTextAttribute(consoleHandle, 0x78);
-		writeString(69, 11, L"Tên đăng nhập");
-		writeString(69, 14, L"Mật khẩu");
-		writeString(78, 20, L"\033[4mQuên mật khẩu\033[0m");
+	//viết chữ
+	SetConsoleTextAttribute(consoleHandle, 0x78);
+	writeString(69, 11, L"Tên đăng nhập");
+	writeString(69, 14, L"Mật khẩu");
+	writeString(78, 20, L"\033[4mQuên mật khẩu\033[0m");
 
-		SetConsoleTextAttribute(consoleHandle, 0x77);
-		writeString(91, 20, L".");
+	SetConsoleTextAttribute(consoleHandle, 0x77);
+	writeString(91, 20, L".");
 
-		//khung đăng nhập
-		SetConsoleTextAttribute(consoleHandle, 0x78);
-		menuBar(68, 16, 32, 2);
+	//khung đăng nhập
+	SetConsoleTextAttribute(consoleHandle, 0x78);
+	menuBar(68, 16, 32, 2);
 	//đăng nhập
 	SetConsoleTextAttribute(consoleHandle, 0x87);
 	writeString(80, 17, L"ĐĂNG NHẬP");
@@ -450,27 +442,6 @@ inline void display1() {
 
 	gotoxy(0, 20);
 	fillColorConsole(0, 20, 77, 22);
-
-	gotoxy(0, 0);
-	fillColorConsole(0, 0, 200, 3);
-
-	gotoxy(114, 3);
-	fillColorConsole(114, 3, 200, 8);
-
-	gotoxy(0, 8);
-	fillColorConsole(0, 8, 200, 10);
-
-	gotoxy(101, 10);
-	fillColorConsole(101, 10, 200, 19);
-
-	gotoxy(0, 19);
-	fillColorConsole(0, 19, 200, 19);
-
-	gotoxy(91, 20);
-	fillColorConsole(91, 20, 200, 20);
-
-	gotoxy(0, 21);
-	fillColorConsole(0, 21, 200, 38);
 
 }
 
